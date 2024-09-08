@@ -2,7 +2,7 @@
 members = [
   "crates/*"
 ]
-
+resolver = "2"
 
 [workspace.package]
 version = "0.0.0"
@@ -10,4 +10,8 @@ edition = "2021"
 repository = "https://github.com/al8n/crates"
 homepage = "https://github.com/al8n/crates"
 license = "Apache-2.0/MIT"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
 
